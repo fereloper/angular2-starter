@@ -1,3 +1,30 @@
-body {
-  margin: 2em;
+/* Header */
+.navbar {
+  margin-bottom: 0;
+}
+/* Main Section */
+.starter-main {
+  background-color: #6f5499;
+  padding: 80px 0;
+}
+/* Footer */
+.starter-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #99979c;
+    text-align: center;
+    background-color: #2a2730;
+}
+.starter-footer-links {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+.starter-footer-links li {
+    display: inline-block;
+}
+.starter-footer-links li+li {
+    margin-left: 15px;
+}
+.starter-footer a {
+    color: #fff;
 }

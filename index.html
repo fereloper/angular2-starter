@@ -1,23 +1,55 @@
 <html>
-  <head>
-    <title>Angular 2 QuickStart</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <!-- 1. Load libraries -->
-     <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <!-- 2. Configure SystemJS -->
-    <script src="systemjs.config.js"></script>
-    <script>
-      System.import('app').catch(function(err){ console.error(err); });
-    </script>
-  </head>
-  <!-- 3. Display the application -->
-  <body>
-    <starter-app>Loading...</starter-app>
-  </body>
+
+<head>
+  <title>Angular 2 QuickStart</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- 1. Load libraries -->
+  <!-- Polyfill(s) for older browsers -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/reflect-metadata/Reflect.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <!-- 2. Configure SystemJS -->
+  <script src="systemjs.config.js"></script>
+  <script>
+    System.import('app').catch(function(err) {
+      console.error(err);
+    });
+  </script>
+</head>
+<!-- 3. Display the application -->
+
+<body>
+  <header class="navbar navbar-static-top starter-nav" id="top">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>        <a href="../" class="navbar-brand">Starter</a> </div>
+      <nav id="bs-navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Component 1</a></li>
+          <li><a href="#">Component 2</a></li>
+          <li><a href="#">Component 3</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="starter-main">
+    <div class="container">
+      <starter-app>Loading...</starter-app>
+    </div>
+  </main>
+  <footer class="starter-footer">
+    <div class="container">
+      <ul class="starter-footer-links">
+        <li><a href="https://github.com/feroj21/angular2-starter">GitHub</a></li>
+        <li><a href="https://twitter.com/bferoj">Twitter</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
 </html>
