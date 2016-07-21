@@ -4,6 +4,6 @@ import { PRODUCTS } from './../mocks/mock-products';
 @Injectable()
 export class ProductService {
     getProducts() {
-        return PRODUCTS;
+        return Promise.resolve(PRODUCTS);
     }
 }
